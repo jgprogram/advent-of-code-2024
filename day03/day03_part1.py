@@ -1,5 +1,6 @@
 import re
 
+
 def main():
     data_lines = open("data.txt")
 
@@ -12,4 +13,7 @@ def main():
         print(matches)
 
     print(total)
+    data_lines.close()
+
+
 main()

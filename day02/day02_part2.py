@@ -6,7 +6,7 @@ def main():
         for entry in line.split(" "):
             levels.append(int(entry))
         reports.append(levels)
-
+    data_lines.close()
     print("First report:", reports[0])
 
     safe_reports = 0
@@ -17,7 +17,7 @@ def main():
     print("Safe reports:", safe_reports)
 
 
-def check_report_type(report, recurr = True):
+def check_report_type(report, recurr=True):
     report_type = 1  # 0 - Unsafe, 1 - Safe
     prev_direction = None
     prev_level = report[0]
@@ -39,5 +39,5 @@ def check_report_type(report, recurr = True):
 
     return report_type
 
-main()
 
+main()

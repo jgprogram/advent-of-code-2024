@@ -1,5 +1,6 @@
 import re
 
+
 def main():
     data_lines = open("data.txt")
 
@@ -18,6 +19,7 @@ def main():
                 total += int(numbers[0]) * int(numbers[1])
 
     print(total)
+    data_lines.close()
 
 
 main()
